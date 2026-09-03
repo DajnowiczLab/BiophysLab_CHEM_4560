@@ -1,6 +1,7 @@
 # Optimization and Curve Fitting
 
-We will highlight the types optimization and curve fitting that is used in biophysical chemistry.  
+We will highlight the types optimization and curve fitting that is used in biophysical chemistry. 
+First we will go over some key concepts followed by an in class exercise. 
 You can follow along in google Colab by clicking the [link](https://github.com/DajnowiczLab/BiophysLab_CHEM_4560/blob/main/tutorials/Intro_curve_fitting.ipynb).
 
 
