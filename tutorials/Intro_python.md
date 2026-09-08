@@ -2,7 +2,7 @@
 
 ## **Short Videos:**
 - Watch [this](https://www.youtube.com/watch?v=fWjsdhR3z3c) video introducing how to use Python:  
-- Watch [this](https://www.youtube.com/watch?v=fWjsdhR3z3c) video introducing Juypter Notebooks:  
+- Watch [this](https://www.youtube.com/watch?v=jZ952vChhuI&t=199s) video introducing Juypter Notebooks:  
 - Watch [this](https://www.youtube.com/watch?v=inN8seMm7UI) video introducing Google Colab:  
 
 ## **Colab Setup:**
@@ -67,10 +67,10 @@ Below we will go over types, features, control flow, and semantics.
   ``` 
 - Boolean: True (1) or False (0)
   ```python 
-  True == 1
-  False == 2
+  print(True == 1)
+  print(False == 2)
 
-  1 == 2
+  print(1 == 2)
   ``` 
 - List: a container  
   ```python 
@@ -221,4 +221,21 @@ Below we will go over types, features, control flow, and semantics.
 - [Python Docs](https://docs.python.org/3/)<br>
 - [Real Python](https://realpython.com/)<br>
   
-#### **Lets Build Something 🏗️**
+## **Data  Visualization**
+![double well potential](../assets/images/Double_well_potential.png)
+
+1) **Create a function the computes the energy of a harmonic potential and plot the energy wrt bond length**<br>
+$\frac{1}{2}k(r-r_{eq})^2$
+2) **load o_Cu_distance_vs_time.npz data and plot the time series and plot a histrogram of the distances**. 
+  tip:
+  ```python
+  import numpy as np
+
+  with np.load('o_Cu_distance_vs_time.npz') as data:
+      print("Stored arrays:", data.files)
+      time = data['name1'] # time is in ps
+      distances = data['name2'] # distances in Angstroms
+
+  print(f'{time=}')
+  print(f'{distances=}')
+  ```
